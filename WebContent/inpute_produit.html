@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Gestion des Produits</title>
+</head>
+<body>
+<h2>Ajouter un produit</h2>
+<form action="liste_produit" method="POST"><input type="hidden"
+	id="id" name="id" value=""> <label for="produit">Produit
+:</label><br>
+<input type="text" id="produit" name="produit"><br>
+
+<label for="prix">Prix :</label><br>
+<input type="double" id="prix" name="prix"><br>
+
+<label for="quantite">Quantité :</label><br>
+<input type="int" id="quantite" name="quantite"><br>
+
+<input type="hidden" name="action" value="add">
+<button type="submit">Ajouter</button>
+<button type="reset">Reset</button>
+</form>
+<br>
+<a href="liste_produit">Voir la liste des produits</a>
+</body>
+</html>
